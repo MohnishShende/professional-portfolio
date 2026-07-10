@@ -1,4 +1,4 @@
-# Mohnish Shende — Professional Portfolio
+# Mohnish Shende: Professional Portfolio
 
 Cybersecurity Engineer | Security Researcher
 
