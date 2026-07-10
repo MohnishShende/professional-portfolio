@@ -1,0 +1,37 @@
+\section{Security Engineering Projects}
+
+\cvproject
+  {NodeZero Homelab Infrastructure Platform}
+  {\cvlink{https://github.com/MohnishShende/NodeZero}{github.com/MohnishShende/NodeZero}}
+  {Self-hosted infrastructure platform | Debian 13, Docker Compose, Caddy, Pi-hole, Unbound, Tailscale}
+  {
+    \begin{itemize}
+      \item Designed and deployed a containerized Debian 13 platform using Docker Compose with isolated service boundaries.
+      \item Configured recursive DNS and DNS-based filtering with Pi-hole and Unbound, using Caddy for reverse proxy and HTTPS routing.
+      \item Established encrypted remote access with Tailscale and documented disaster recovery and rebuild workflows.
+    \end{itemize}
+  }
+
+\cvproject
+  {IBI Schemes}
+  {\cvlink{https://github.com/MohnishShende/IBI-schemes}{github.com/MohnishShende/IBI-schemes}}
+  {Applied cryptography | Python 3.10+, Elliptic Curve Cryptography, Flask, cryptography, tinyec}
+  {
+    \begin{itemize}
+      \item Implemented five Identity-Based Identification (IBI) protocols in Python, including Twin Schnorr, Modified Schnorr, Sakai Kasahara, Fiat Shamir, and Zero-Knowledge schemes.
+      \item Profiled runtime and memory usage (\texttt{tracemalloc}) for key generation, proving, and verification across pairing-based and pairing-free implementations.
+      \item Built a Flask client-server simulation to model identity authentication workflows.
+    \end{itemize}
+  }
+
+\cvproject
+  {Nmap LLM}
+  {\cvlink{https://github.com/MohnishShende/nmap-llm}{github.com/MohnishShende/nmap-llm}}
+  {AI security tooling | Python 3.10+, Nmap, Ollama, Mistral, XML, JSON, Markdown}
+  {
+    \begin{itemize}
+      \item Built an offline, local LLM-assisted Nmap workflow (Ollama/Mistral) for scan planning, command generation, and results triage.
+      \item Built a Python CLI that converts natural-language inputs into validated Nmap commands, enforcing strict private IPv4 range boundaries.
+      \item Automated reporting that parses Nmap XML to JSON and generates Markdown triage reports with timestamped execution records.
+    \end{itemize}
+  }

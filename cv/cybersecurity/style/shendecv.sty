@@ -1,0 +1,119 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{style/shendecv}[2026/07/10 Production ATS-friendly CV style]
+
+\RequirePackage[a4paper,top=15mm,bottom=16mm,left=17mm,right=17mm]{geometry}
+\RequirePackage{xcolor}
+\RequirePackage{hyperref}
+\RequirePackage{enumitem}
+\RequirePackage{titlesec}
+\RequirePackage{needspace}
+\RequirePackage{microtype}
+
+\definecolor{cvink}{HTML}{111827}
+\definecolor{cvmuted}{HTML}{4B5563}
+\definecolor{cvblue}{HTML}{155E95}
+\definecolor{cvrule}{HTML}{CBD5E1}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=cvblue,
+  linkcolor=cvblue,
+  pdfborder={0 0 0},
+  pdftitle={Mohnish Shende - Cybersecurity Engineer and Security Researcher CV},
+  pdfauthor={Mohnish Shende},
+  pdfsubject={Cybersecurity, Security Research, Systems Infrastructure},
+  pdfkeywords={Cybersecurity, Vulnerability Assessment, OSINT, Digital Forensics, Threat Intelligence, Infrastructure Hardening, Cryptography}
+}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\emergencystretch}{2em}
+\raggedright
+\linespread{1.05}
+
+\titleformat{\section}
+  {\needspace{5\baselineskip}\large\bfseries\color{cvink}}
+  {}
+  {0pt}
+  {}
+  [\vspace{2pt}{\color{cvrule}\titlerule[0.4pt]}]
+\titlespacing*{\section}{0pt}{9pt}{5pt}
+
+\setlist[itemize]{
+  leftmargin=1.15em,
+  label=\textbullet,
+  topsep=2pt,
+  itemsep=1.55pt,
+  parsep=0pt,
+  partopsep=0pt
+}
+
+\newcommand{\cvlink}[2]{\href{#1}{#2}}
+\newcommand{\cvcontactsep}{\hspace{0.6em}{\color{cvrule}|}\hspace{0.6em}}
+
+% Header: name, positioning, location, and machine-readable contact links.
+\newcommand{\cvheader}[4]{%
+  {\fontsize{26}{29}\selectfont\bfseries\color{cvink}#1}\par
+  \vspace{3pt}
+  {\fontsize{10.5}{13}\selectfont\color{cvblue}\bfseries #2}\par
+  {\small\color{cvmuted}#3}\par
+  \vspace{4pt}
+  {\small #4}\par
+  \vspace{8pt}
+  {\color{cvrule}\hrule height 0.7pt}
+  \vspace{7pt}
+}
+
+\newcommand{\cvsummary}[1]{%
+  {\fontsize{9.85}{12.6}\selectfont\color{cvink}#1}\par
+}
+
+\newcommand{\cvskill}[2]{%
+  \textbf{#1:} #2\par
+  \vspace{2.6pt}
+}
+
+\newcommand{\cvrole}[4]{%
+  \needspace{6\baselineskip}
+  {\bfseries\color{cvink}#1}\par
+  {\color{cvmuted}#3}\par
+  {\small\color{cvmuted}#2 | #4}\par
+  \vspace{0pt}
+}
+
+\newcommand{\cvproject}[4]{%
+  \needspace{7\baselineskip}
+  {\bfseries\color{cvink}#1}\par
+  {\small #2}\par
+  {\small\color{cvmuted}#3}\par
+  \vspace{1pt}
+  #4
+  \vspace{3pt}
+}
+
+\newcommand{\cvpublication}[4]{%
+  \needspace{6\baselineskip}
+  {\bfseries\color{cvink}#1}\par
+  {\color{cvmuted}#2}\par
+  {\small #3}\par
+  \vspace{1pt}
+  #4
+}
+
+\newcommand{\cveducation}[4]{%
+  \needspace{3\baselineskip}
+  {\bfseries\color{cvink}#1}\par
+  {\color{cvmuted}#3}\par
+  {\small\color{cvmuted}#2\if\relax\detokenize{#4}\relax\else{} | #4\fi}\par
+  \vspace{3pt}
+}
+
+\newcommand{\cveducationdetail}[5]{%
+  \needspace{4\baselineskip}
+  {\bfseries\color{cvink}#1}\par
+  {\color{cvmuted}#3}\par
+  \if\relax\detokenize{#4}\relax\else{\color{cvmuted}#4}\par\fi
+  {\small\color{cvmuted}#2\if\relax\detokenize{#5}\relax\else{} | #5\fi}\par
+  \vspace{3pt}
+}

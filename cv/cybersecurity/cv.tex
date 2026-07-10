@@ -1,0 +1,39 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage{fontspec}
+\XeTeXgenerateactualtext=1
+\setmainfont{Inter}
+
+\usepackage{style/shendecv}
+
+\begin{document}
+
+\cvheader
+  {Mohnish Shende}
+  {Cybersecurity Engineer | Security Researcher}
+  {Nagpur, India}
+  {
+    \cvlink{mailto:mohnishshende4@gmail.com}{mohnishshende4@gmail.com}
+    \cvcontactsep
+    \cvlink{tel:+917020172261}{91 7020172261}
+    \par
+    \vspace{1pt}
+    \cvlink{https://linkedin.com/in/mohnishshende}{LinkedIn}
+    \cvcontactsep
+    \cvlink{https://github.com/MohnishShende}{GitHub}
+    \cvcontactsep
+    \cvlink{https://scholar.google.com/citations?user=Qu1HDUIAAAAJ\&hl=en}{Google Scholar}
+    \cvcontactsep
+    \cvlink{https://orcid.org/0009-0000-9466-3056}{ORCID}
+  }
+
+\input{sections/summary}
+\input{sections/experience}
+\input{sections/skills}
+\input{sections/projects}
+
+\input{sections/publication}
+\input{sections/research}
+\input{sections/education}
+
+\end{document}
