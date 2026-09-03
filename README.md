@@ -35,7 +35,7 @@ The objective is to provide a transparent, version-controlled record of my work 
 
 ### Downloads
 
-- 📥 [Professional CV (PDF)](releases/cybersecurity-cv-v1.0.0.pdf)
+- 📥 [Professional CV (PDF)]([releases/cybersecurity-cv-v1.0.0.pdf](https://github.com/MohnishShende/professional-portfolio/releases/download/v2/CV.-.Mohnish.Shende.pdf))
 - 📂 [LaTeX Source](cv/cybersecurity)
 
 ---
