@@ -10,7 +10,7 @@
 [![GitHub](https://img.shields.io/badge/GitHub-MohnishShende-181717?logo=github&logoColor=white)](https://github.com/MohnishShende)
 [![Google Scholar](https://img.shields.io/badge/Google%20Scholar-Publications-4285F4?logo=googlescholar&logoColor=white)](https://scholar.google.com/citations?user=Qu1HDUIAAAAJ&hl=en)
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0000--9466--3056-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0009-0000-9466-3056)
-[![WEBSITE](https://www.mohnish.ink)
+[![WEBSITE](https://img.shields.io/badge/WEBSITE-mohnish.ink-000000?logo=google-chrome&logoColor=white)](https://www.mohnish.ink)
 
 </div>
 
